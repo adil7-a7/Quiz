@@ -67,7 +67,8 @@ function getQuestions()
 //function to end quiz
 
 //function for the timer to start to count
-function timer() {
+function timer() 
+{
     timeAmount--;
     timerEl.textContent = timeAmount;
     if (gameState === true && timeAmount <= 0) {
@@ -78,10 +79,31 @@ function timer() {
       finalScoreEl.textContent = finalScore
       console.log("ROT: " + finalScore);
     }
-  }
+}
 
 //function to save the high score
-
+function saveHighscore() 
+{
+    // get value of input box
+    var initials = initialsEl.value.trim();
+  
+    // make sure value wasn't empty
+    if (initials !== "") {
+      // get saved scores from localstorage, or if not any, set to empty array
+      var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+      // format new score object for current user
+      var newScore = {
+        score: finalScore,
+        initials: initials,
+      };
+  
+      // save to localstorage
+      highscores.push(newScore);
+      window.localStorage.setItem("highscores", JSON.stringify(highscores));
+      window.location.href = "highscores.html";
+      
+    }
+}
 
 //function to check if you pressed enter
 
