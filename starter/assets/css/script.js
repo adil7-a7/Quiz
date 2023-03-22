@@ -60,11 +60,8 @@ function getQuestions()
     ); //end of foreach
 } //end of function
 
-//function for the question click
 
 
-
-//function to end quiz
 
 //function for the timer to start to count
 function timer() 
@@ -105,31 +102,48 @@ function saveHighscore()
     }
 }
 
-//function to check if you pressed enter
-
-
-
-
 
 //questions
 var questions = [
 {
-    questionTitle: "What's your favorite team",
-    choices: ['Benfica', 'Porto', 'Real Madrid'],
+    questionTitle: "Which team won the 1962 European Championship ??",
+    choices: ['Benfica', 'Porto', 'Real Madrid', 'Manchester United'],
     answer: 'Benfica';
-}
+},
 
 {
-    questionTitle: "Who's the best player ?",
-    choices: ['Tico Tico', 'Ronaldo', 'Sunil Chetri', 'Kyle Walker'],
-    answer: 'Ronaldo';
+    questionTitle: "Which player has scored the most goals for National Team",
+    choices: ['Tico Tico', 'Cristiano Ronaldo', 'Sunil Chetri', 'Rooney'],
+    answer: 'Cristiano Ronaldo';
 
 
-}
+},
+{
+    questionTitle: "Which of the following is a sport brand?",
+    choices: ['Primark', 'Gucci', 'Nike', 'Microsoft'],
+    answer: 'Nike';
+},
+{
+    questionTitle: "Which of the following football player scored the most goals ?",
+    choices: ['Cristiano Ronaldo', 'Messi', 'Pele', 'Maradona'],
+    answer: 'Cristiano Ronaldo';
+},
+{
+    questionTitle: "Where did the FIFA 2022 World Cup take place ?",
+    choices: ['Qatar', 'Japan', 'Germany', 'Brazil'],
+    answer: 'Qatar';
+},
+{
+    questionTitle: "Which Player has won the most Ballon D'OR titles ?",
+    choices: ['Maradona', 'Cristiano Ronaldo', 'Messi', 'Ozil'],
+    answer: 'Messi';
+},
+{
+    questionTitle: "Which of the following is the confederation of Africa ? ",
+    choices: ['UEFA', 'CAF', 'CONMEBOL', 'AFC'],
+    answer: 'CAF';
+},
 
-    questionTitle: "Who's the best player ?",
-    choices: ['Tico Tico', 'Ronaldo', 'Sunil Chetri', 'Kyle Walker'],
-    answer: 'Ronaldo';
 ]
 
 
