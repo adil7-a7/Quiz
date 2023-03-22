@@ -57,17 +57,28 @@ function getQuestions()
         choicesEl.appendChild(choiceButton);
     }
         
-    });
+    ); //end of foreach
+} //end of function
 
-
-}
 //function for the question click
+
 
 
 //function to end quiz
 
 //function for the timer to start to count
-
+function timer() {
+    timeAmount--;
+    timerEl.textContent = timeAmount;
+    if (gameState === true && timeAmount <= 0) {
+      alert("Sorry! Time is over.  GAME OVER! ")
+      questionsEl.setAttribute("class", "hide")
+      endScreenEl.setAttribute("class", "visible");
+      clearInterval(timerId)
+      finalScoreEl.textContent = finalScore
+      console.log("ROT: " + finalScore);
+    }
+  }
 
 //function to save the high score
 
