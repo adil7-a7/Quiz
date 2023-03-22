@@ -1,7 +1,50 @@
+//questions
+var questions = [
+    {
+        questionTitle: "Which team won the 1962 European Championship ??",
+        choices: ['Benfica', 'Porto', 'Real Madrid', 'Manchester United'],
+        answer: 'Benfica';
+    },
+    
+    {
+        questionTitle: "Which player has scored the most goals for National Team",
+        choices: ['Tico Tico', 'Cristiano Ronaldo', 'Sunil Chetri', 'Rooney'],
+        answer: 'Cristiano Ronaldo';
+    
+    
+    },
+    {
+        questionTitle: "Which of the following is a sport brand?",
+        choices: ['Primark', 'Gucci', 'Nike', 'Microsoft'],
+        answer: 'Nike';
+    },
+    {
+        questionTitle: "Which of the following football player scored the most goals ?",
+        choices: ['Cristiano Ronaldo', 'Messi', 'Pele', 'Maradona'],
+        answer: 'Cristiano Ronaldo';
+    },
+    {
+        questionTitle: "Where did the FIFA 2022 World Cup take place ?",
+        choices: ['Qatar', 'Japan', 'Germany', 'Brazil'],
+        answer: 'Qatar';
+    },
+    {
+        questionTitle: "Which Player has won the most Ballon D'OR titles ?",
+        choices: ['Maradona', 'Cristiano Ronaldo', 'Messi', 'Ozil'],
+        answer: 'Messi';
+    },
+    {
+        questionTitle: "Which of the following is the confederation of Africa ? ",
+        choices: ['UEFA', 'CAF', 'CONMEBOL', 'AFC'],
+        answer: 'CAF';
+    },
+    
+    ]
+    
+    
+    
+    
 //Start Button
-1. Have a Event listener to for the START 
-2. create a questions function when user clicks on START
-2. Have a set setInterval in the button listener to start timer after 
 
 var startButtonEl = document.querySelector('start');
 var timerEl = document.querySelector('.timer');
@@ -19,7 +62,6 @@ var gameState = false;
 var sfxCorrect = new Audio('./assets/sfx/correct.wav');
 var sfxInorrect = new Audio('./assets/sfx/incorrect.wav');
 
-//function to start quiz
 
 function startQuiz 
 {
@@ -36,6 +78,9 @@ function startQuiz
     getQuestions();
     console.log()
 }
+
+//start button
+startEl.addEventListener("click", startQuiz)
 
 
 //function to get the questions
@@ -101,50 +146,5 @@ function saveHighscore()
       
     }
 }
-
-
-//questions
-var questions = [
-{
-    questionTitle: "Which team won the 1962 European Championship ??",
-    choices: ['Benfica', 'Porto', 'Real Madrid', 'Manchester United'],
-    answer: 'Benfica';
-},
-
-{
-    questionTitle: "Which player has scored the most goals for National Team",
-    choices: ['Tico Tico', 'Cristiano Ronaldo', 'Sunil Chetri', 'Rooney'],
-    answer: 'Cristiano Ronaldo';
-
-
-},
-{
-    questionTitle: "Which of the following is a sport brand?",
-    choices: ['Primark', 'Gucci', 'Nike', 'Microsoft'],
-    answer: 'Nike';
-},
-{
-    questionTitle: "Which of the following football player scored the most goals ?",
-    choices: ['Cristiano Ronaldo', 'Messi', 'Pele', 'Maradona'],
-    answer: 'Cristiano Ronaldo';
-},
-{
-    questionTitle: "Where did the FIFA 2022 World Cup take place ?",
-    choices: ['Qatar', 'Japan', 'Germany', 'Brazil'],
-    answer: 'Qatar';
-},
-{
-    questionTitle: "Which Player has won the most Ballon D'OR titles ?",
-    choices: ['Maradona', 'Cristiano Ronaldo', 'Messi', 'Ozil'],
-    answer: 'Messi';
-},
-{
-    questionTitle: "Which of the following is the confederation of Africa ? ",
-    choices: ['UEFA', 'CAF', 'CONMEBOL', 'AFC'],
-    answer: 'CAF';
-},
-
-]
-
 
 
