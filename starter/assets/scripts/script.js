@@ -41,10 +41,6 @@ var questions = [
     
     ]
     
-    
-    
-    
-//Start Button
 
 var startButtonEl = document.querySelector('start');
 var timerEl = document.querySelector('.timer');
@@ -63,6 +59,10 @@ var sfxCorrect = new Audio('./assets/sfx/correct.wav');
 var sfxInorrect = new Audio('./assets/sfx/incorrect.wav');
 
 
+//start button
+startEl.addEventListener("click", startQuiz);
+
+//start quiz function
 function startQuiz 
 {
     timerEl.textContent = timer;
@@ -79,8 +79,7 @@ function startQuiz
     console.log()
 }
 
-//start button
-startEl.addEventListener("click", startQuiz)
+
 
 
 //function to get the questions
