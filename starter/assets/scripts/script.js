@@ -3,7 +3,7 @@ var questions =
 [
     {
         questionTitle: "Which team won the 1962 European Championship ??",
-        choices: ['Benfica', 'Porto', 'Real Madrid', 'Manchester United'],
+        choices: ['SL Benfica', 'FC Porto', 'Real Madrid', 'Manchester United'],
         answer: 'Benfica',
     },
     
