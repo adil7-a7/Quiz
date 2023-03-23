@@ -1,4 +1,4 @@
-// LOGIC
+// Questions
 var questions = 
 [
     {
@@ -69,7 +69,8 @@ var questions =
   var initialsEl = document.querySelector("#initials");
   
   var finalScore = 0
-  // Function to start quiz
+
+  // start quiz 
   function startQuiz() {
     gameState = true
     startScreenEl.setAttribute("class", "hide");
@@ -79,7 +80,7 @@ var questions =
     getQuestion();
   }
   
-  // function to make timer
+  //  timer
   function timer() {
     timeAmount--;
     timerEl.textContent = timeAmount;
@@ -93,7 +94,7 @@ var questions =
     }
   }
   
-  // Function to get the questions
+  // getting the questions
   function getQuestion() {
     var currentQuestion = questions[quizIndex];
     var question = document.querySelector("#question-title");
@@ -145,7 +146,7 @@ var questions =
     });
   }
   
-  // Function to check if you've pressed enter and for saving the high score
+  // saving high score
   function saveHighscore() {
       // get value of input box
       var initials = initialsEl.value.trim();
