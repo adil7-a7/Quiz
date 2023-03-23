@@ -26,9 +26,10 @@ Create a code quiz that contains the following requirements:
   * When the game ends, it should display their score and give the user the ability to save their initials and their score
   
 ## Demonstration
-
+![Coding Quiz](https://user-images.githubusercontent.com/117782725/227098595-fcfb3da8-2349-4123-aee6-e5d64d36e2f2.gif)
 
 ## URL
+
 
 
 ---
